@@ -2,7 +2,7 @@
     {
       title: "My Song",
       artist: "My Artist",
-      src: "./audio/rayan-gosling-ПВО-2026-04-29-16_55-_1_.mp3", // вставь сюда свою песню
+      src: "./audio/song.mp3", // вставь сюда свою песню
       cover: "./img/5447179478627981132.jpg"
     }
   ];
