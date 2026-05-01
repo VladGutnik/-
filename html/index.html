@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="demka-1">
+        <img src="https://picsum.photos/300/300" class="cover" id="cover">
+        <div class="title">Track Name</div>
+        <div class="artist">Artist</div>
+
+        <audio id="audio"></audio>
+
+        <div class="progress" id="progress">
+            <div class="progress-filled" id="progressFilled"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="prev()">⏮</button>
+            <button class="btn" onclick="togglePlay()" id="playBtn">▶</button>
+            <button class="btn" onclick="next()">⏭</button>
+        </div>
+    </div>
+</body>
+
+</html>
