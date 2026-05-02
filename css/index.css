@@ -1,49 +1,129 @@
-    body {
-      width: 280px;
-      box-shadow: 0 10px 30px rgba(48, 47, 47, 0.5);
-      text-align: center;
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
 
-      /* МЕНЯЙ ЭТИ СТРОКИ ДЛЯ ПОЗИЦИИ */
-      position: absolute;
-      bottom: 50px; /* отступ снизу */
-      left: 50%;
-      transform: translateX(-50%); /* центр по горизонтали */
-    }
+.Sonic {
+  width: 600px;
+  margin-top: 30px;
+  animation: logoAnim 2s ease forwards;
+}
 
-    .btn {
-      background: #2a2a2a;
-      border: none;
-      color: white;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      font-size: 18px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
 
-    .btn:hover {
-      background: #858585;
-    }
+@keyframes logoAnim {
+  0% {
+    transform: scale(0.5) translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
 
-    .progress {
-      width: 100%;
-      height: 4px;
-      background: #ffffff;
-      border-radius: 5px;
-      margin-top: 15px;
-      cursor: pointer;
-      position: relative;
-    }
+/* ПЛЕЕРЫ В РЯД */
+section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+}
 
-    .progress-filled {
-      height: 100%;
-      background: rgb(134, 134, 134);
-      width: 0%;
-      border-radius: 5px;
-    }
+/* ПЛЕЕР */
+.demka-1 {
+  width: 220px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
 
-    .cover {
+/* ОБЛОЖКА */
+.cover {
   width: 100%;
-  height: 300px; /* меняешь высоту */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ТЕКСТ */
+.title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ПРОГРЕСС */
+.progress {
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.progress-filled {
+  height: 100%;
+  background: rgb(134, 134, 134);
+  width: 0%;
+  border-radius: 5px;
+}
+
+/* КНОПКИ */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  background: #2a2a2a;
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #858585;
+}
+
+.demka-1 {
+  width: 220px;
+  background: #000000;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  /* АНИМАЦИЯ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ЭФФЕКТ ПРИ НАВЕДЕНИИ */
+.demka-1:hover {
+  transform: translateY(-12px); /* поднимается вверх */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.krula1{
+  position: absolute;
+  left: 1388px;
+}
+
+.krula2{
+  position: absolute;
+  left: 0px;
 }
